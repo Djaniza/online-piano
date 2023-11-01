@@ -45,7 +45,7 @@ header .column span {
     height: 30px;
     appearance: none;
     border-radius: 30px;
-    background-color: #4b4b4b;
+    background-color: #979797;
     cursor: pointer;
     position: relative;
 }
@@ -54,7 +54,7 @@ header .column span {
     content: "";
     width: 20px;
     height: 20px;
-    background-color: #ffffff;
+    background-color: #4b4b4b;
     position: absolute;
     top: 50%;
     left: 0.3rem;
@@ -66,6 +66,10 @@ header .column span {
 .keys-check input:checked::before {
     background-color: #ffffff;
     left: 2.1rem;
+}
+
+.piano-keys .key.hide span {
+    display: none;
 }
 
 .piano-keys {
@@ -107,12 +111,12 @@ header .column span {
     font-size: 1.13rem;
 }
 
-.piano-keys .white:active {
+.piano-keys.key.white.active {
     box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
     background: linear-gradient(to bottom #fff 0% #eee 100%);
 }
 
-.piano-keys .black:active {
+.piano-keys.key.black.active {
     box-shadow: inset -5px 5px 20px rgba(255, 255, 255, 0.1);
     background: linear-gradient(to bottom #000 #434343);
 }
